@@ -8,10 +8,10 @@ import Container from '../../shared/Container'
 
 const Index = () => {
     return (
-            <Container extraClass="pt-small">
+            <Container extraClass="pt-small pb-0">
                 <Row className='align-items-center'>
                     <Col md={6}>
-                        <img className='w-100' src={container} alt="container" />
+                        <img className='connecting-img' src={container} alt="container" />
                     </Col>
                     <Col md={6}>
                         <div className='connection-info'>

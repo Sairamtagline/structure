@@ -5,7 +5,7 @@ import Button from './Button'
 const Form = () => {
   return (
     <Frm>
-      <Frm.Group className="mb-3 trading-form">
+      <Frm.Group className="trading-form">
         <Frm.Select aria-label="Default select example">
           <option>US +1</option>
           <option value="1">AU +43</option>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Options = () => {
   return (
-    <div>Options</div>
+    <div className='pb-4'>Options</div>
   )
 }
 

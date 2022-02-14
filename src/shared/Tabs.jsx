@@ -7,7 +7,7 @@ const Tabs = ({ defaultKey, tabs }) => {
         <Tb
             defaultActiveKey={defaultKey}
             id="controlled-tab-example"
-            className="mb-3"
+            className="custom-tab"
             activeKey={key}
             onSelect={(k) => setKey(k)}
 

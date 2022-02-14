@@ -9,7 +9,7 @@ import Container from '../../shared/Container'
 
 const ClaimSpot = () => {
     return (
-        <Container extraClass="pb-small">
+        <Container extraClass="pb-small pt-small">
             <Row className='justify-content-center'>
                 <Col xl={9}>
                     <div className='clam-spot'>

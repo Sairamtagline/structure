@@ -97,6 +97,75 @@ header .bg-light {
 .banner-content p {
   margin-bottom: 50px;
 }
+.custom-tab.nav-tabs {
+  margin-bottom: 30px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.custom-tab.nav-tabs,
+.custom-tab.nav-tabs .nav-link {
+  border: 0;
+  padding: 0;
+}
+.custom-tab.nav-tabs .nav-link {
+  color: #5B616E;
+  font-weight: 400;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  margin-right: 30px;
+  white-space: nowrap;
+}
+.custom-tab.nav-tabs .nav-link.active {
+  color: #1A1A1C;
+  border-color: #1A1A1C;
+}
+.stock-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.stock-col {
+  padding: 0 10px;
+  width: 50%;
+  margin-bottom: 15px;
+}
+.stock-box {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  min-height: 97px;
+}
+.stock-icon {
+  padding-right: 10px;
+}
+.stock-title-price h5 {
+  margin-bottom: 5px;
+}
+.stock-percentage svg {
+  margin-right: 5px;
+}
+.stock-title-price span {
+  color: #5B616E;
+}
+.stock-info {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.stock-title-price {
+  max-width: 63%;
+  flex: 0 0 63%;
+}
+.stock-percentage {
+  max-width: 37%;
+  text-align: right;
+  flex: 0 0 37%;
+}
 .trading-form {
   display: flex;
 }
@@ -310,12 +379,24 @@ footer {
   transform: rotate(-45deg) translate(-1px, 6px);
 }
 
+@media screen and (max-width: 1400px) {
+  .stock-title-price h5 {
+    font-size: 16px;
+  }
+  .stock-percentage svg {
+    display: block;
+    margin-left: auto;
+  }
+}
 @media screen and (max-width: 1199px) {
   .icon-box {
     padding: 20px 20px 0 20px;
   }
   .assured-info {
     padding: 30px;
+  }
+  .stock-percentage svg {
+    display: inline;
   }
 }
 @media screen and (max-width: 991px) {
@@ -351,6 +432,16 @@ footer {
     border-bottom: 1px solid #DDDFE2;
     border-left: 0;
   }
+  .assets-description {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .assets-description .btn {
+    width: 100%;
+  }
+  .connection-info {
+    padding: 30px;
+  }
 }
 @media screen and (max-width: 767px) {
   .banner-content h1 {
@@ -381,7 +472,8 @@ footer {
     bottom: 30%;
     top: auto;
   }
-  .features-list:nth-child(odd) .row .features-image {
+  .features-list:nth-child(odd) .row .features-image,
+  .features-image {
     text-align: center;
   }
   .features-image {
@@ -405,6 +497,11 @@ footer {
     overflow: hidden;
     text-align: left;
   }
+  img.connecting-img {
+    margin: 0 -12px;
+    width: calc(100% - -24px);
+    max-width: none;
+  } 
 }
 @media screen and (max-width: 575px) {
   .section {
@@ -459,5 +556,14 @@ footer {
   }
   .icon-box svg {
     margin-right: 20px;
+  }
+  .stock-col {
+    width: 100%;
+  }
+  .connection-info .btn {
+    width: 100%;
+  }
+  .connection-info {
+    padding: 20px 0 0 0;
   }
 }

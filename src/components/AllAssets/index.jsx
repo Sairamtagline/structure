@@ -16,13 +16,15 @@ const tabs = {
 };
 const Index = () => {
   return (
-    <Container extraClass="pt-small">
-      <Row>
-        <Col md={6}>
+    <Container extraClass="pt-small pb-small">
+      <Row className="align-items-center">
+        <Col xl={6} lg={7}>
           <Tabs defaultKey="Leaders" {...{ tabs }} />
         </Col>
-        <Col md={6}>
-          <AssetsDescription />
+        <Col xl={6} lg={5}>
+          <div className="px-xl-5 px-sm-4">
+            <AssetsDescription />
+          </div>
         </Col>
       </Row>
     </Container>
