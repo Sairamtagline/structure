@@ -5,7 +5,7 @@ const MainContent = () => {
     return (
         <div className="banner-content">
             <Title>Sign up today and get no-fee trading for life.</Title>
-            <p>No market closes. No trading fees. All the stocks and <br className="d-sm-block d-none"/>crypto coins you love.</p>
+            <p>No market closes. No trading fees. All the stocks and <br className="d-lg-block d-none"/>crypto coins you love.</p>
         </div>
     )
 }

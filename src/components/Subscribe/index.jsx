@@ -7,16 +7,18 @@ import Container from "../../shared/Container";
 
 const Index = () => {
   return (
-    <Container extraClass="pb-md-0 pt-sm-0">
-      <Row className="align-items-center flex-row-reverse">
+    <Container extraClass="pb-md-0 pt-0">
+      <Row className="align-items-center flex-lg-row-reverse">
         <Col md={6}>
-          <div className="text-center">
+          <div className="subscribe-image">
             <img src={Iphone13} alt="Iphone13" />
           </div>
         </Col>
         <Col md={6}>
-          <MainContent />
-          <MainContentForm />
+          <div className="subscribe">
+            <MainContent />
+            <MainContentForm />
+          </div>
         </Col>
       </Row>
     </Container>

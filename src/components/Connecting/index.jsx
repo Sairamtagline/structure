@@ -10,10 +10,10 @@ const Index = () => {
     return (
             <Container extraClass="pt-small pb-0">
                 <Row className='align-items-center'>
-                    <Col md={6}>
+                    <Col lg={6}>
                         <img className='connecting-img' src={container} alt="container" />
                     </Col>
-                    <Col md={6}>
+                    <Col lg={6}>
                         <div className='connection-info'>
                             <Title>Connecting the world of assets</Title>
                             <Description>

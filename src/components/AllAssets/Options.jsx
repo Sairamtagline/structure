@@ -1,18 +1,18 @@
 import React from 'react'
 import Description from '../../shared/Description'
 import Form from '../../shared/Form'
-import Title from '../../shared/Title'
 
 const Options = () => {
   return (
-    <div className='pb-4'>
-
-      <Title>
-        Fractional options are the future
-      </Title>
-      <Description>
-        In the future, Structure will allow its users to buy and sell fractions of options.
-      </Description>
+    <div className='options-wrap'>
+      <div className='options-info'>
+        <h4>
+          Fractional options are the future
+        </h4>
+        <Description>
+          In the future, Structure will allow its users to buy and sell fractions of options.
+        </Description>
+      </div>
       <Form select={false} btnValue="Subscribe" placeholder="Enter email to stay up to date" />
     </div>
   )

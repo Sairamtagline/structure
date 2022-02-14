@@ -3,7 +3,7 @@ import Description from '../../shared/Description'
 
 const Points = () => {
     return (
-        <div className='pb-4'>
+        <div className='pb-sm-4 pb-2'>
             <Description>
                 1  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
             </Description>

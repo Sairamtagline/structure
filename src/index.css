@@ -327,8 +327,7 @@ footer {
   color: #1A1A1C;
 }
 .footer-nav li {
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 40px;
 }
 .footer-nav li:first-child {
   margin-left: 0;
@@ -377,6 +376,19 @@ footer {
   -moz-transform: rotate(-45deg) translate(-1px, 6px);
   -webkit-transform: rotate(-45deg) translate(-1px, 6px);
   transform: rotate(-45deg) translate(-1px, 6px);
+}
+.options-wrap {
+  padding: 60px 30px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+.options-wrap .trading-form .form-control {
+  margin-left: 0;
+}
+.options-info {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media screen and (max-width: 1400px) {
@@ -434,13 +446,37 @@ footer {
   }
   .assets-description {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 20px auto 0;
   }
   .assets-description .btn {
     width: 100%;
   }
   .connection-info {
     padding: 30px;
+  }
+  .trading-form {
+    flex-wrap: wrap;
+  }
+  .trading-form .form-control {
+    margin-left: 10px;
+    margin-right: 0;
+    flex: 1;
+    font-size: 14px;
+  }
+  .trading-form .form-select {
+    font-size: 14px;
+  }
+  .trading-form .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .trading-form .btn {
+    font-size: 14px;
+  }
+  .connecting-img {
+    margin: 0 -35px;
+    width: calc(100% - -70px);
+    max-width: none;
   }
 }
 @media screen and (max-width: 767px) {
@@ -497,11 +533,20 @@ footer {
     overflow: hidden;
     text-align: left;
   }
-  img.connecting-img {
+  .footer-nav li {
+    margin-bottom: 20px;
+  }
+  .subscribe-image img {
+    margin-left: -40px;
+  }
+  .connecting-img {
     margin: 0 -12px;
     width: calc(100% - -24px);
     max-width: none;
-  } 
+  }
+  .options-wrap {
+    padding: 40px 20px;
+  }
 }
 @media screen and (max-width: 575px) {
   .section {
@@ -565,5 +610,12 @@ footer {
   }
   .connection-info {
     padding: 20px 0 0 0;
+  }
+  .subscribe .trading-form .form-control {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  .options-wrap {
+    padding: 20px;
   }
 }
