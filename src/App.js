@@ -1,18 +1,16 @@
+import { lazy, Suspense } from "react";
 import "./App.css";
-import ClaimSpot from "./components/ClaimSpot";
+
 import Header from "./components/Header";
-import Features from "./components/Features";
-import MainContent from "./components/MainContent";
-import Setup from "./components/Setup";
+const Home = lazy(() => import("./pages/Home"));
 
 const App = () => {
   return (
     <>
       <Header />
-      <MainContent />
-      <ClaimSpot />
-      <Features />
-      <Setup />
+      <Suspense fallback="loading">
+        <Home />
+      </Suspense>
     </>
   );
 };
