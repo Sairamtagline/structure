@@ -2,9 +2,9 @@ import React from 'react'
 import { Button as Btn } from 'react-bootstrap'
 
 
-const Button = () => {
+const Button = ({ children }) => {
     return (
-        <Btn></Btn>
+        <Btn>{children}</Btn>
     )
 }
 
