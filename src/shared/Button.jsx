@@ -1,11 +1,11 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
+import { Button as Btn } from 'react-bootstrap'
 
 
-const Button1 = () => {
-  return (
-    <Button></Button>
-  )
+const Button = () => {
+    return (
+        <Btn></Btn>
+    )
 }
 
-export default Button1
+export default React.memo(Button)
