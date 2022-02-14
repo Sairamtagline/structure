@@ -44,10 +44,10 @@ const Form = ({
         </Button>
       </Frm.Group>
       {validation && (
-        <div className="text-danger">Please fill out this field</div>
+        <div className="text-danger mt-2">Please fill out this field</div>
       )}
       {!validation && value && (
-        <div className="text-success">
+        <div className="text-success mt-2">
           You are subscribed! You’ll be hearing from us soon.
         </div>
       )}
