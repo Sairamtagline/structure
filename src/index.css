@@ -5,11 +5,28 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
+  font-size: 16px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.btn-primary {
+  background-color: #1A1A1C;
+  border-radius: 8px;
+  border-color: #1A1A1C;
+  padding: 10px 15px;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #1A1A1C;
+  border-radius: 8px;
+  border-color: #1A1A1C;
 }
 
 .top-header {
@@ -19,4 +36,11 @@ code {
 .top-header p {
   margin-bottom: 0;
   color: #fff;
+}
+header .bg-light {
+  background-color: #F5F6F7!important;
+}
+.navbar-light .navbar-nav a.nav-link {
+  color: #1A1A1C;
+  padding: 5px 15px;
 }
