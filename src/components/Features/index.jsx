@@ -13,13 +13,13 @@ const Index = () => {
           <Col md={9}>
             {mockData.map(({ title, description, button, image }, index) => {
               return (
-                <div className="features-list">
-                  <Row key={index} className="align-items-center">
+                <div className="features-list" key={index}>
+                  <Row className="align-items-center">
                     <Col md={6}>
                       <Title>{title}</Title>
-                        {description.map((d, i) => (
-                          <Description key={i}>{d}</Description>
-                        ))}
+                      {description.map((d, i) => (
+                        <Description key={i}>{d}</Description>
+                      ))}
                       <Button variant="primary">{button}</Button>
                     </Col>
                     <Col md={6}>

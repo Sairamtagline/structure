@@ -1,15 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Tab, Tabs as Tb } from 'react-bootstrap'
 
-const Tabs = () => {
+const Tabs = ({ defaultKey, tabs }) => {
+    const [key, setKey] = useState(defaultKey);
     return (
-        <Tb defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
-            <Tab eventKey="home" title="Home">
-            </Tab>
-            <Tab eventKey="profile" title="Profile">
-            </Tab>
+        <Tb
+            defaultActiveKey={defaultKey}
+            id="controlled-tab-example"
+            className="mb-3"
+            activeKey={key}
+            onSelect={(k) => setKey(k)}
+
+        >
+            {
+                Object.keys(tabs).map((key, index) => {
+                    return (<Tab.Container eventKey={key} title={key} key={index} />)
+                })
+            }
+            <Tab.Container eventKey={key}>
+                {tabs[key]}
+            </Tab.Container>
         </Tb>
     )
 }
 
-export default Tabs
+export default React.memo(Tabs)

@@ -5,8 +5,8 @@ import { footerDescriptionOne, footerDescriptionTwo } from './mockData'
 const ColumnDescription = () => {
     return (
         <>
-            {footerDescriptionOne.map(d => <Description>{d}</Description>)}
-            {footerDescriptionTwo.map(d => <Description>{d}</Description>)}
+            {footerDescriptionOne.map(d => <Description key={d}>{d}</Description>)}
+            {footerDescriptionTwo.map(d => <Description key={d}>{d}</Description>)}
         </>
     )
 }
