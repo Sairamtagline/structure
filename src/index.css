@@ -95,6 +95,59 @@ header .bg-light {
   min-width: 120px;
   height: 60px;
 }
+.clam-spot {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 70px 30px;
+  overflow: hidden;
+  position: relative;
+}
+.clam-spot-info h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.clam-spot-left {
+  max-width: 200px;
+  text-align: center;
+  margin-left: auto;
+}
+.clam-spot-left h5 {
+  font-size: 18px;
+  font-weight: normal;
+}
+.clam-spot-left h3 {
+  font-size: 40px;
+  font-weight: normal;
+}
+.coin-wrap span {
+  position: absolute;
+  pointer-events: none;
+}
+.coin-one {
+  left: 10%;
+  top: -20%;
+}
+.coin-two {
+  left: 55%;
+  top: 5%;
+}
+.coin-three {
+  right: 28%;
+  bottom: 15%;
+}
+.coin-four {
+  right: -6%;
+  top: 30px;
+}
+.features-list {
+  padding: 40px 0;
+}
+.features-list:nth-child(even) .row {
+  flex-direction: row-reverse;
+}
+.features-list:nth-child(odd) .row .features-image {
+  text-align: right;
+}
 
 @media screen and (max-width: 1199px) {
   

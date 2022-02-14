@@ -13,7 +13,7 @@ const Index = () => {
             <MainContent />
             <MainContentForm />
           </Col>
-          <Col md={6} className="d-md-block d-none">
+          <Col md={5} className="d-md-block d-none offset-md-1">
             <div className="text-center">
               <Banner />
             </div>

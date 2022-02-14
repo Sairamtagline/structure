@@ -23,7 +23,7 @@ const NavBar = () => {
                 </Navbar.Collapse>
                 <Nav className='align-items-center'>
                     <Nav.Link href="#" className='d-none d-lg-block'>Sign up</Nav.Link>
-                    <Button color="primary" className="d-none d-md-block">Get the app</Button>
+                    <Button variant="primary" className="d-none d-md-block">Get the app</Button>
                 </Nav>
             </Container>
         </Navbar>
