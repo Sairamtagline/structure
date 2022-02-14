@@ -1,10 +1,11 @@
 import React from "react";
+import { FormLabel } from "react-bootstrap";
 import Form from "../../shared/Form";
 
 const MainContentForm = () => {
   return (
     <>
-      <div>Ready to start trading?</div>
+      <FormLabel>Ready to start trading?</FormLabel>
       <Form />
     </>
   );

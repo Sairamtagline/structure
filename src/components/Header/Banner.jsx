@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <div className="top-header">
       <Container>
-        <p className="text-center d-flex align-items-center justify-content-center">
+        <p className="signup-text">
             <span className="me-2">Get no-fee trad ing for life when you sign up today</span> <ArrowRight /></p>
       </Container>
     </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Title = ({ children}) => {
   return (
-    <div>{children}</div>
+    <h2>{children}</h2>
   )
 }
 

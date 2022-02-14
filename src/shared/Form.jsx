@@ -5,16 +5,18 @@ import Button from './Button'
 const Form = () => {
   return (
     <Frm>
-      <Frm.Group className="mb-3" controlId="formBasicEmail">
-        <Frm.Label>Email address</Frm.Label>
-        <Frm.Control type="email" placeholder="Enter email" />
-        <Frm.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Frm.Text>
+      <Frm.Group className="mb-3 trading-form">
+        <Frm.Select aria-label="Default select example">
+          <option>US +1</option>
+          <option value="1">AU +43</option>
+          <option value="1">RU +7</option>
+          <option value="2">SW +46</option>
+        </Frm.Select>
+        <Frm.Control type="text" placeholder="Enter your phone number" />
+        <Button variant="primary" type="submit">
+          Send link
+        </Button>
       </Frm.Group>
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
     </Frm>
   )
 }

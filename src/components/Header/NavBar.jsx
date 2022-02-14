@@ -5,7 +5,7 @@ import Button from '../../shared/Button'
 
 const NavBar = () => {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="md">
             <Container>
                 <Navbar.Brand href="#">
                     <img src={Logo} alt="logo"/>
