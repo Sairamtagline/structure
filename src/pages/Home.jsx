@@ -6,11 +6,13 @@ import Setup from "../components/Setup";
 import Assured from "../components/Assured";
 import Connecting from "../components/Connecting";
 import Subscribe from '../components/Subscribe';
+import AllAssets from '../components/AllAssets';
 
 const Home = () => {
     return (
         <>
             <MainContent />
+            <AllAssets />
             <ClaimSpot />
             <Features />
             <Setup />

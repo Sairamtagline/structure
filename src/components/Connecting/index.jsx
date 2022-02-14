@@ -3,12 +3,12 @@ import Description from '../../shared/Description'
 import Title from '../../shared/Title'
 import container from '../../images/container.png'
 import Button from '../../shared/Button'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
+import Container from '../../shared/Container'
 
 const Index = () => {
     return (
-        <div className='section pt-small'>
-            <Container>
+            <Container extraClass="pt-small">
                 <Row className='align-items-center'>
                     <Col md={6}>
                         <img className='w-100' src={container} alt="container" />
@@ -27,7 +27,6 @@ const Index = () => {
                     </Col>
                 </Row>
             </Container>
-        </div>
     )
 }
 
