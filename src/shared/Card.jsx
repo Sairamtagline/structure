@@ -17,7 +17,7 @@ const Card = ({ mockData = [] }) => {
                         <div key={index} className="stock-col">
                             <div key={index} className="stock-box">
                                 <div className='stock-icon'>
-                                    {image || <SVG6 />}
+                                    {image ? <img src={image} alt='img' /> : <SVG6 />}
                                 </div>
                                 <div className='stock-info'>
                                     <div className='stock-title-price'>
@@ -25,7 +25,7 @@ const Card = ({ mockData = [] }) => {
                                         <span>{price}</span>
                                     </div>
                                     <div className='stock-percentage'>
-                                        {percentageArrow === 'up' ? <UpArrow/> : <DownArrow/>}
+                                        {percentageArrow === 'up' ? <UpArrow /> : <DownArrow />}
                                         {percentage}
                                     </div>
                                 </div>
