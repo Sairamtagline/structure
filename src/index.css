@@ -4,9 +4,19 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
+  font-weight: 400;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.top-header {
+  background-color: #1A1A1C;
+  padding: 10px;
+}
+.top-header p {
+  margin-bottom: 0;
+  color: #fff;
 }

@@ -4,7 +4,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap'
 const NavBar = () => {
     return (
         <Navbar bg="light" expand="lg">
-            <Container fluid>
+            <Container>
                 <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
