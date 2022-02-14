@@ -1,26 +1,41 @@
-import React, { Fragment } from 'react'
-import Description from '../../shared/Description'
-import Title from '../../shared/Title'
-import mockData from './mockData'
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import Description from "../../shared/Description";
+import Title from "../../shared/Title";
+import mockData from "./mockData";
 
 const Index = () => {
-    return (
-        <>
-            <Title>Ready, set, trade</Title>
+  return (
+    <div className="section pb-small">
+      <Container>
+        <Row>
+          <Col xs={12}>
+            <div className="text-center">
+              <Title>Ready, set, trade</Title>
+              <Description>
+                Setup an account and start trading in less than 5 minutes.
+              </Description>
+            </div>
+          </Col>
+        </Row>
+        <Row>
             {mockData.map(({ title, description, image }, index) => {
                 return (
-                    <Fragment key={index}>
-                        <Title>{title}</Title>
-                        <div>
-                            {description.map((d, i) => <Description key={i}>{d}</Description>)}
-                        </div>
+                <Col md={4} key={index}>
+                    <div className="icon-box text-center">
                         {image}
-                    </Fragment>
-                )
+                        <h5>{title}</h5>
+                        {description.map((d, i) => (
+                            <Description key={i}>{d}</Description>
+                        ))}
+                    </div>
+                </Col>
+                );
             })}
-            <p>Setup an account and start trading in less than 5 minutes.</p>
-        </>
-    )
-}
+        </Row>
+      </Container>
+    </div>
+  );
+};
 
-export default Index
+export default Index;

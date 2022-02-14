@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Button from "../../shared/Button";
 import Description from "../../shared/Description";
@@ -7,7 +7,7 @@ import mockData from "./mockData";
 
 const Index = () => {
   return (
-    <div className="section">
+    <div className="section pb-small">
       <Container>
         <Row className="justify-content-center">
           <Col md={9}>
@@ -17,11 +17,9 @@ const Index = () => {
                   <Row key={index} className="align-items-center">
                     <Col md={6}>
                       <Title>{title}</Title>
-                      <div>
                         {description.map((d, i) => (
                           <Description key={i}>{d}</Description>
                         ))}
-                      </div>
                       <Button variant="primary">{button}</Button>
                     </Col>
                     <Col md={6}>

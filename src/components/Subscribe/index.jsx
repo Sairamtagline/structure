@@ -6,7 +6,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const Index = () => {
   return (
-    <div className="section">
+    <div className="section pb-0">
       <Container>
         <Row className="align-items-center">
           <Col md={6}>
