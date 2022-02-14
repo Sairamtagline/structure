@@ -16,10 +16,10 @@ const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="navbarScroll">
           <Nav className="mx-auto my-2 my-lg-0">
-            <Nav.Link href="#action1">All Assets</Nav.Link>
-            <Nav.Link href="#action2">Stocks</Nav.Link>
-            <Nav.Link href="#action2">Crypto</Nav.Link>
-            <Nav.Link href="#action2">Trade</Nav.Link>
+            <Nav.Link href="#">All Assets</Nav.Link>
+            <Nav.Link href="#">Stocks</Nav.Link>
+            <Nav.Link href="#">Crypto</Nav.Link>
+            <Nav.Link href="#">Trade</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <Nav className="align-items-center">
