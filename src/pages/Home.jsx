@@ -5,6 +5,7 @@ import MainContent from "../components/MainContent";
 import Setup from "../components/Setup";
 import Assured from "../components/Assured";
 import Connecting from "../components/Connecting";
+import Subscribe from '../components/Subscribe';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Setup />
             <Assured />
             <Connecting />
+            <Subscribe />
         </>
     )
 }
