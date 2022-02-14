@@ -7,7 +7,7 @@ import mockData from "./mockData";
 
 const Index = () => {
   return (
-    <Container extraClass="pb-small">
+    <Container extraClass="pb-small pt-small">
       <Row>
         <Col xs={12}>
           <div className="text-center">
@@ -24,10 +24,12 @@ const Index = () => {
             <Col md={4} key={index}>
               <div className="icon-box text-center">
                 {image}
-                <h5>{title}</h5>
-                {description.map((d, i) => (
-                  <Description key={i}>{d}</Description>
-                ))}
+                <div className="icon-info">
+                  <h5>{title}</h5>
+                  {description.map((d, i) => (
+                    <Description key={i}>{d}</Description>
+                  ))}
+                </div>
               </div>
             </Col>
           );

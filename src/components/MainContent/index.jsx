@@ -7,7 +7,7 @@ import Container from "../../shared/Container";
 
 const Index = () => {
   return (
-    <Container>
+    <Container extraClass="pb-small">
       <Row className="align-items-center">
         <Col md={6}>
           <MainContent />

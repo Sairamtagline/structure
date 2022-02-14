@@ -1,5 +1,6 @@
 import React from "react";
-import { Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+import Container from "../../shared/Container";
 import Tabs from "../../shared/Tabs";
 import AssetsDescription from "./AssetsDescription";
 import Crypto from "./Crypto";
@@ -15,10 +16,16 @@ const tabs = {
 };
 const Index = () => {
   return (
-    <Col md={6}>
-      <Tabs defaultKey="Leaders" {...{ tabs }} />
-      <AssetsDescription />
-    </Col>
+    <Container extraClass="pt-small">
+      <Row>
+        <Col md={6}>
+          <Tabs defaultKey="Leaders" {...{ tabs }} />
+        </Col>
+        <Col md={6}>
+          <AssetsDescription />
+        </Col>
+      </Row>
+    </Container>
   )
 };
 

@@ -9,18 +9,18 @@ import Container from '../../shared/Container'
 
 const ClaimSpot = () => {
     return (
-        <Container>
+        <Container extraClass="pb-small">
             <Row className='justify-content-center'>
-                <Col md={9}>
+                <Col xl={9}>
                     <div className='clam-spot'>
                         <Row className='align-items-center'>
-                            <Col md={6}>
+                            <Col lg={6} md={7}>
                                 <div className='clam-spot-info'>
                                     <h4>Sign up and get no-fee trading for life</h4>
                                     <p>We’re giving our first 5,000 users lifetime access to totally free trading.</p>
                                 </div>
                             </Col>
-                            <Col md={5} className="offset-md-1">
+                            <Col lg={5} md={5} className="offset-lg-1">
                                 <div className='clam-spot-left'>
                                     <h6>Spots left</h6>
                                     <h3>2,631</h3>
